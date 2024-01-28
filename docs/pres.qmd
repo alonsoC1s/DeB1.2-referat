@@ -1,0 +1,193 @@
+---
+title: "Kurt Gödel"
+subtitle: "Deutsche (und Welt-)Mathematik im frühen 1900"
+author: "Alonso Martínez Cisneros"
+institute: "Freie Universität Berlin"
+format:
+    revealjs:
+        logo: img/fu-logo_volltonfarben.png
+        output-file: index.html
+        footer: "Gödel"
+        incremental: true
+        html-math-method: mathjax
+        theme: serif
+lang: de
+self-contained: true
+---
+
+## Grundlagenkrise der Mathematik 
+
+![Georg Cantor (🇷🇺/🇩🇪), Gottlob Frege (🇩🇪), Bertrand Russell (🇬🇧)](img/cantor_frege_russell.svg){width="75%"}
+
+- Antinomien in Mathematik gefunden
+
+::: {.notes}
+Am anfange des 1900 begannen große Probleme aufzutreten. Mathematiker wie
+Gottlob Frege, Georg Cantor und Russell begannen mit der Arbeit an der
+Formalisierung der Mathematik. Nach mehreren Antinomien, die von Hilbert und
+Russell entdeckt wurden, wurde die gesamte Mathematik in Frage gestellt. Wenn
+die Mathematik unvollständig ist, dann sind es auch die Wissenschaften, die sich
+der Mathematik bedienen.
+:::
+
+##
+
+::: {.columns}
+
+::: {.column width="40%"}
+![David Hilbert (🇩🇪)](img/hilbert.jpeg){width="80%"}
+:::
+::: {.column width="60%"}
+- Deutsche Mathematiker David Hilbert suchte nach einer Lösung
+
+- Das Hilberprogramm:
+    - Mathematik als formales System neu definieren
+    - Vollständigkeit des Systems
+    - Konsistenz
+    - Entscheidungsproblem
+:::
+
+:::
+
+::: {.notes}
+Zwischen 1918 und 1922, inmitten des kulturellen Frühlings der Weimarer
+Republik, formuliert der deutsche Mathematiker David Hilbert die Richtung, die
+die Grundlagenkrise der Mathematik lösen wird.
+
+### Programm
+- **Vollständigkeit** jede mathematische Aussage in der Sprache bewiesen werden
+kann
+- **Konsistenz** Beweisen, dass keine Antinomie in der Sprache bewiesen werden
+kann
+- **Entscheidungsproblem** Es sollte einen Algorithmus geben, der sagen kann, ob
+eine Aussage wahr oder falsch ist
+:::
+
+# Das Programm wurde von Gödel getötet
+
+## Kurt Gödel
+
+::: {.columns}
+
+:::{.column width="70%"}
+- Geboren am 28.Apr.1906
+- Schlechten Gesundheitszustand als kind
+- Im 1924 zog er nach Wien
+- Theoretische Physik an der Uni Wien
+- Wiener Kreis besucher (wie Ludwig Wittgenstein)
+- Dissertation “Über die Vollständigkeit des Logikkalküls"
+:::
+:::{.column width="30%"}
+![Kurt Gödel 🇦🇹/🇺🇸 (1925)](img/kurt.png)
+:::
+
+:::
+
+::: {.notes}
+- Brünn, Österreich-Ungarn (heute Tschechien) stammte as eine wohlhabenden Familie
+
+- Nach dem Ersten Weltkrieg nahm Gödel die österreichische Staatsbürgerschaft an.
+
+- Er begann seine Studium in Theoretische Physik an der Universität Wien
+
+- Er begann den Wiener Kreis zu besuchen (wie Ludwig Wittgenstein). In die
+Treffen des Wiener Zirkels traf er seine spätere Frau Adele Nimbursky. Circa
+1927. Si war schon mit ein Fotografen verheiratet, bis 1933.
+
+- Seine Dissertation “Über die Vollständigkeit des Logikkalküls" bedeutete
+probleme für das Hilbertprogramm.
+
+:::
+
+##
+
+- Gödel und Nimbursky heirateten im Jahr 1938
+
+- Anschluss Österreichs $\to$ Gödel floh nach Princeton
+
+- 1942 lernte Gödel Albert Einstein.
+
+- Gödel hatte Paranoia
+
+- Gödel starb an Unterernährung und Entkräftung 1981
+
+::: {.notes}
+- Gödel arbeitete an "stark verjudeten Mathematik"
+- Nach der sogenannte Aschluss Österreichs, floh Gödel nach Princeton.
+   - Er arbeitete am “Institute for Advanced Study”
+- 1942 lernte Gödel Albert Einstein.
+   - Sie wurden sehr enge Freunde
+   - (Anekdote zur Staatseinbürgerung, wenn es Zeit gibt)
+
+- Aufgrund seiner Paranoia dachte Gödel, dass er durch sein Essen vergiftet
+werden würde. Jahrelang aß er nur, was seine Frau Adele kochte und ihm
+vorsetzte. Als Adele krank wurde, hörte Kurt ganz auf zu essen. Obwohl Adele
+wieder gesund wurde, starb er an Unterernährung und Erschöpfung.
+
+- Adele & Kurt sind gemeinsam in Princeton bestattet.
+
+**Transition:**
+_Aber wie hat Gödel das Programm getötet?_
+:::
+
+
+## Gödelscher Unvollständigkeitssatz
+- Sei $\mathcal{L}$ eine sprache (symbolen wie “+”, "*", zahlen)
+   - Mächtigkeit
+   - $\mathcal{L}$ hast Aussagen mit einer gewissen Syntax.
+   - $\mathcal{L}$ hast auch eine Menge von Schlussregeln (inference rules)
+- Sei $A$ eine Menge von Axiomen (aufzählbare)
+- Zusammen mit $\mathcal{L}$ und $A$ macht ein System (oder Theorie) $T$.
+
+::: {.notes}
+- $\mathcal{L}$ ist “hinreichend mächtig", wenn er natürliche Zahlen mit
+Addition und Multiplikation beschreibt.
+
+- Aussagen sind Dinge wie "1+1=2". Sie haben eine Syntax und wir können sagen,
+ob sie wahr oder falsch sind
+:::
+
+## 
+
+::: {.callout-caution}
+## Erster Unvollständigkeitssatz
+Sei T eine hinreichend mächtige theorie. Dann existiert eine Aussagen $\sigma$ so
+dass $T \not\vdash \sigma$ & $T \not\vdash \neg \sigma$
+:::
+
+. . .
+
+> „Jedes hinreichend mächtige, rekursiv aufzählbare formale System ist entweder
+> widersprüchlich oder unvollständig.“
+
+## 
+
+::: {.callout-caution}
+## Zweiter Unvollständigkeitssatz
+Sei $T$ eine hinreichend mächtige theorie. Dann, $T \not\vdash
+\operatorname{Const}(T)$.
+:::
+
+. . .
+
+> „Jedes hinreichend mächtige konsistente formale System kann die eigene
+> Konsistenz nicht beweisen.“
+
+# Fragen?
+
+. . .
+
+**Oder möchten Sie die Anekdote mit Einstein hören?**
+
+::: {.notes}
+Für das Einbürgerungsverfahren war eine richterliche Anhörung erforderlich, in
+der er Kenntnisse des Landes und der Verfassung zeigen musste. Bei seinen
+Vorbereitungen dazu entdeckte Gödel, dass die Verfassung des Landes insoweit
+unvollständig war, als es trotz ihrer die Demokratie schützenden
+Einzelbestimmungen möglich gewesen wäre, im Rahmen dieser Verfassung eine
+Diktatur zu errichten
+
+Einstein und Morgenstern mussten Gödel davon überzeugen, nichts über die
+unvollständigkeit zu reden, die er in der Verfassung gefunden hatte. Sie fuhren
+Gödel zu dem Termin
+:::
