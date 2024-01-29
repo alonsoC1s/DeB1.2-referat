@@ -11,6 +11,7 @@ format:
         incremental: true
         html-math-method: mathjax
         theme: serif
+        multiplex: true
 lang: de
 self-contained: true
 ---
