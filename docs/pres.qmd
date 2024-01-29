@@ -85,7 +85,10 @@ eine Aussage wahr oder falsch ist
 :::
 
 ::: {.notes}
-- Brünn, Österreich-Ungarn (heute Tschechien) stammte as eine wohlhabenden Familie
+- Kurt Gödel wurde am 28. April 1906 in Brünn, Österreich-Ungarn (heute
+Tschechien) geboren. Er stammte as eine wohlhabenden Familie
+
+- Als Kind war er sehr oft krank
 
 - Nach dem Ersten Weltkrieg nahm Gödel die österreichische Staatsbürgerschaft an.
 
@@ -105,20 +108,27 @@ probleme für das Hilbertprogramm.
 - Gödel und Nimbursky heirateten im Jahr 1938
 
 - Anschluss Österreichs $\to$ Gödel floh nach Princeton
+   - Arbeit am "Institute for Advanced Study"
 
 - 1942 lernte Gödel Albert Einstein.
 
 - Gödel hatte Paranoia
 
 - Gödel starb an Unterernährung und Entkräftung 1981
+![Grab von Adele und Kurt Gödel in Princeton](img/grab.jpeg){fig-align="center" width="35%"}
 
 ::: {.notes}
-- Gödel arbeitete an "stark verjudeten Mathematik"
-- Nach der sogenannte Aschluss Österreichs, floh Gödel nach Princeton.
-   - Er arbeitete am “Institute for Advanced Study”
+- Nach der sogenannte Aschluss Österreichs, floh Gödel nach Princeton. Der Reich
+fand seine arbeit als "stark verjudeten Mathematik".
+   - Er arbeitete am “Institute for Advanced Study”, eines der wichtigsten
+   Forschungszentren der damaligen Zeit. Andere große Denker wie Einstein,
+   Oppenheimer, John von Neumann waren ebenfalls Mitglieder des "Intitute for
+   Advanced Study".
+
 - 1942 lernte Gödel Albert Einstein.
    - Sie wurden sehr enge Freunde
-   - (Anekdote zur Staatseinbürgerung, wenn es Zeit gibt)
+   - Es gibt eine sehr lustige Anekdote über Einstein und Gödel als Freunde.
+   Wenn genug Zeit ist, kann ich sie erzählen
 
 - Aufgrund seiner Paranoia dachte Gödel, dass er durch sein Essen vergiftet
 werden würde. Jahrelang aß er nur, was seine Frau Adele kochte und ihm
@@ -128,7 +138,7 @@ wieder gesund wurde, starb er an Unterernährung und Erschöpfung.
 - Adele & Kurt sind gemeinsam in Princeton bestattet.
 
 **Transition:**
-_Aber wie hat Gödel das Programm getötet?_
+_Aber wie hat Gödel das Hilbertrogramm getötet?_
 :::
 
 
@@ -137,7 +147,7 @@ _Aber wie hat Gödel das Programm getötet?_
    - Mächtigkeit
    - $\mathcal{L}$ hast Aussagen mit einer gewissen Syntax.
    - $\mathcal{L}$ hast auch eine Menge von Schlussregeln (inference rules)
-- Sei $A$ eine Menge von Axiomen (aufzählbare)
+- Sei $A$ eine aufzählbare Menge von Axiomen
 - Zusammen mit $\mathcal{L}$ und $A$ macht ein System (oder Theorie) $T$.
 
 ::: {.notes}
@@ -161,6 +171,10 @@ dass $T \not\vdash \sigma$ & $T \not\vdash \neg \sigma$
 > „Jedes hinreichend mächtige, rekursiv aufzählbare formale System ist entweder
 > widersprüchlich oder unvollständig.“
 
+:::{.notes}
+T beweist nicht sigma, und T beweist nicht die Negation von sigma
+:::
+
 ## 
 
 ::: {.callout-caution}
@@ -174,7 +188,7 @@ Sei $T$ eine hinreichend mächtige theorie. Dann, $T \not\vdash
 > „Jedes hinreichend mächtige konsistente formale System kann die eigene
 > Konsistenz nicht beweisen.“
 
-# Fragen? {background-video="img/einstein_godel_princeton.mp4" background-video-loop="yes"}
+# Fragen? {background-video="img/einstein_godel_princeton.mp4" background-video-loop="yes" background-video-muted="true"}
 
 . . .
 
